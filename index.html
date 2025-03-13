@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> <!-- Chargement du script -->
 </head>
 <body>
 
@@ -19,8 +20,8 @@
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Portfolio</a></li>
-                <li><a href="bio.html" target="_blank">Bio</a></li> <!-- Ouvre dans un nouvel onglet -->
-                <li><a href="contact.html" target="_blank">Contact</a></li> <!-- Ouvre dans un nouvel onglet -->
+                <li><a href="#" onclick="loadPage('bio.html')">Bio</a></li>
+                <li><a href="#" onclick="loadPage('contact.html')">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -73,6 +74,9 @@
                 <h3>Projet 10</h3>
             </a>
         </div>
+
+        <!-- Zone où le contenu Bio ou Contact sera chargé -->
+        <div id="content"></div>
     </div>
 
     <!-- Bandeau en bas -->
