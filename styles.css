@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffffff; /* Changement de l'arrière-plan en blanc */
+    background-color: #ffffff; /* Arrière-plan blanc */
 }
 
 /* Bandeau en haut */
@@ -27,7 +27,7 @@ body {
     height: 40px;
 }
 
-/* Menu */
+/* Menu de navigation */
 .top-bar nav ul {
     list-style-type: none;
     margin: 0;
@@ -45,7 +45,7 @@ body {
     font-size: 16px;
 }
 
-/* Contenu principal */
+/* Contenu principal (Portfolio) */
 .main-content {
     margin-top: 100px;
     padding: 20px;
@@ -59,68 +59,4 @@ body {
     gap: 30px;
     margin-top: 40px;
     padding: 20px;
-    justify-content: center;
-}
-
-/* Style des projets */
-.project {
-    text-align: center;
-    color: #000;
-    text-decoration: none;
-}
-
-.project img {
-    width: 70%; /* Réduction de la taille des images de 30% */
-    height: auto;
-    max-width: 700px;
-    max-height: 700px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.project h3 {
-    margin-top: 15px;
-    font-size: 24px;
-}
-
-/* Bandeau en bas */
-.bottom-bar {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.bottom-bar p {
-    margin: 0;
-    font-size: 14px;
-}
-
-/* Adaptation pour les petites résolutions */
-@media (max-width: 1600px) {
-    .projects {
-        grid-template-columns: repeat(2, 1fr); /* 2 projets par ligne */
-    }
-}
-
-@media (max-width: 900px) {
-    .project img {
-        max-width: 525px; /* Réduction pour tablette */
-        max-height: 525px;
-    }
-    .projects {
-        grid-template-columns: repeat(1, 1fr); /* 1 projet par ligne */
-    }
-}
-
-@media (max-width: 600px) {
-    .project img {
-        max-width: 100%; /* Ajustement pour mobile */
-        max-height: auto;
-    }
-}
+    justify-conte
