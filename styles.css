@@ -1,39 +1,61 @@
-/* Autres styles inchangés... */
-
-/* Grid de projets (10 projets) */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 colonnes pour afficher 10 projets */
-    gap: 20px;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Bandeau en haut */
+.top-bar {
+    background-color: #000; /* Noir */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Assurez-vous qu'il soit au-dessus des autres éléments */
 }
 
-.project {
-    width: 100%;
-    text-align: center;
+/* Logo dans la barre du haut */
+.top-bar .logo img {
+    height: 40px;
+}
+
+/* Menu dans la barre du haut */
+.top-bar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-bar nav ul li {
+    margin: 0 10px;
+}
+
+.top-bar nav ul li a {
+    color: white;
     text-decoration: none;
+    font-size: 16px;
 }
 
-.project-thumbnail {
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden; /* S'assure que l'image ne dépasse pas la vignette */
+/* Contenu principal - pour donner de l'espace sous la barre du haut */
+.main-content {
+    margin-top: 60px; /* Ajustez selon la hauteur de la barre du haut */
 }
 
-.project-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* L'image couvre complètement la vignette sans déformer */
+/* Bandeau en bas (pied de page) */
+.bottom-bar {
+    background-color: #000; /* Noir */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Pour s'assurer qu'il soit toujours visible */
 }
 
-.project h3 {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #333;
+/* Footer contenu */
+.bottom-bar p {
+    margin: 0;
+    font-size: 14px;
 }
