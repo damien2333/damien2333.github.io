@@ -3,49 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Damien Breton</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
+    <!-- Bandeau en haut -->
+    <header class="header">
         <div class="logo">
-            <!-- Remplacez le lien ci-dessous par le chemin vers votre logo -->
-            <img src="votre_logo.png" alt="Logo Damien Breton">
+            <img src="logo.png" alt="Logo">
         </div>
-        <div class="header-text">
-            <h1>Damien Breton</h1>
-            <p>Directeur Artistique</p>
-        </div>
+        <nav class="menu">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#bio">Bio</a>
+        </nav>
     </header>
 
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Je suis un directeur artistique passionné par la création d'expériences visuelles uniques. Mon travail repose sur un design épuré et moderne qui raconte une histoire.</p>
+    <!-- Section Portfolio -->
+    <section id="portfolio">
+        <h2>Mon Portfolio</h2>
+        <!-- Exemple de projets -->
+        <div class="project">
+            <h3>Projet 1</h3>
+            <p>Description du projet 1</p>
+        </div>
+        <div class="project">
+            <h3>Projet 2</h3>
+            <p>Description du projet 2</p>
+        </div>
+        <!-- Ajoute d'autres projets ici -->
     </section>
 
-    <section id="portfolio">
-        <h2>Mes Projets</h2>
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/600x400" alt="Projet 1">
-            <h3>Projet 1</h3>
-            <p>Description du projet 1.</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/600x400" alt="Projet 2">
-            <h3>Projet 2</h3>
-            <p>Description du projet 2.</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/600x400" alt="Projet 3">
-            <h3>Projet 3</h3>
-            <p>Description du projet 3.</p>
-        </div>
+    <!-- Section Bio -->
+    <section id="bio">
+        <h2>À propos de moi</h2>
+        <p>Voici une petite présentation de mon profil...</p>
     </section>
 
     <footer>
-        <p>© 2025 Damien Breton</p>
+        <p>&copy; 2025 Damien Breton. Tous droits réservés.</p>
     </footer>
-
 </body>
 </html>
+
 
