@@ -12,22 +12,21 @@
     <!-- Bandeau en haut -->
     <div class="top-bar">
         <div class="logo">
-            <!-- Lien vers la page d'accueil -->
             <a href="index.html">
                 <img src="images/logo.png" alt="Logo">
             </a>
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="#" onclick="loadPage('portfolio.html')">Portfolio</a></li>
                 <li><a href="#" onclick="loadPage('bio.html')">Bio</a></li>
                 <li><a href="#" onclick="loadPage('contact.html')">Contact</a></li>
             </ul>
         </nav>
     </div>
 
-    <!-- Contenu principal -->
-    <div class="main-content">
+    <!-- Contenu dynamique qui change sans recharger la page -->
+    <div id="dynamic-content" class="main-content">
         <h1>Bienvenue sur mon Portfolio</h1>
         <p>Découvrez mes projets en cliquant sur les vignettes ci-dessous.</p>
         
@@ -74,9 +73,6 @@
                 <h3>Projet 10</h3>
             </a>
         </div>
-
-        <!-- Zone où le contenu Bio ou Contact sera chargé -->
-        <div id="content"></div>
     </div>
 
     <!-- Bandeau en bas -->
