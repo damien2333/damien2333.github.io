@@ -1,3 +1,11 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Bandeau en haut */
 .top-bar {
     background-color: #000; /* Noir */
@@ -10,7 +18,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Assurez-vous qu'il soit au-dessus des autres éléments */
+    z-index: 1000;
 }
 
 /* Logo dans la barre du haut */
@@ -39,11 +47,40 @@
 /* Contenu principal - pour donner de l'espace sous la barre du haut */
 .main-content {
     margin-top: 60px; /* Ajustez selon la hauteur de la barre du haut */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Vignettes des projets */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.project {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 /* Bandeau en bas (pied de page) */
 .bottom-bar {
-    background-color: #000; /* Noir */
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 10px;
@@ -51,11 +88,23 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Pour s'assurer qu'il soit toujours visible */
+    z-index: 1000;
 }
 
-/* Footer contenu */
 .bottom-bar p {
     margin: 0;
     font-size: 14px;
+}
+
+/* Adaptation pour les petites résolutions */
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les écrans plus petits */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        grid-template-columns: 1fr; /* 1 colonne pour les très petits écrans */
+    }
 }
