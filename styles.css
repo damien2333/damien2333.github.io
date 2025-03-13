@@ -9,17 +9,18 @@ body {
 
 /* Bandeau en haut */
 .top-bar {
-    background-color: #000;
+    background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Aligne les éléments au centre verticalement */
+    justify-content: space-between; /* Espace entre logo et menu */
     padding: 10px 20px;
+    height: 60px; /* Fixe une hauteur pour éviter l'agrandissement */
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    z-index: 1000;
+    width: 100%;
+    z-index: 1000; /* Met la barre au-dessus du reste */
 }
 
 .top-bar .logo img {
@@ -27,25 +28,26 @@ body {
 }
 
 .top-bar nav ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 .top-bar nav ul li {
-    margin: 0 10px;
+    margin-right: 20px; /* Espacement entre les éléments */
 }
 
 .top-bar nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    padding: 10px 15px; /* Assure une bonne interaction sans étirer la barre */
 }
 
 /* Contenu principal (Portfolio) */
 .main-content {
-    margin-top: 100px;
+    margin-top: 80px; /* Décale le contenu sous la barre */
     padding: 20px;
     text-align: center;
 }
@@ -83,7 +85,7 @@ body {
 
 /* Bandeau en bas */
 .bottom-bar {
-    background-color: #000;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
@@ -153,6 +155,6 @@ body {
 @media (max-width: 600px) {
     .project img {
         max-width: 100%;
-        height: auto;
+        max-height: auto;
     }
 }
