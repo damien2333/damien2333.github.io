@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="hero">
         <div class="container">
             <h1>Nom du Directeur Artistique</h1>
             <p>Directeur artistique | Créatif | Designer</p>
@@ -17,25 +17,32 @@
         </div>
     </header>
     
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
-            <h2>À propos</h2>
-            <p>Je suis un directeur artistique passionné par la création visuelle et l'innovation.</p>
+            <div class="about-content">
+                <img src="portrait.jpg" alt="Portrait" class="portrait">
+                <div>
+                    <h2>À propos</h2>
+                    <p>Je suis un directeur artistique passionné par la création visuelle et l'innovation. Mon travail explore la relation entre design et émotion.</p>
+                </div>
+            </div>
         </div>
     </section>
     
-    <section id="portfolio">
+    <section id="portfolio" class="section">
         <div class="container">
             <h2>Portfolio</h2>
             <div class="grid">
                 <div class="item"><img src="image1.jpg" alt="Projet 1"></div>
                 <div class="item"><img src="image2.jpg" alt="Projet 2"></div>
                 <div class="item"><img src="image3.jpg" alt="Projet 3"></div>
+                <div class="item"><img src="image4.jpg" alt="Projet 4"></div>
+                <div class="item"><img src="image5.jpg" alt="Projet 5"></div>
             </div>
         </div>
     </section>
     
-    <section id="contact">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
             <p>Email : <a href="mailto:contact@example.com">contact@example.com</a></p>
@@ -49,7 +56,7 @@
     
     <footer>
         <div class="container">
-            <p>&copy; 2025 - Nom du Directeur Artistique</p>
+            <p>&copy; 2025 - Nom du Directeur Artistique | Tous droits réservés</p>
         </div>
     </footer>
 </body>
