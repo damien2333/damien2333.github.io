@@ -38,3 +38,39 @@ title:Damien Breton
     </footer>
 </body>
 </html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+section {
+    padding: 40px;
+}
+
+.grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.item img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
