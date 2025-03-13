@@ -46,7 +46,7 @@ body {
 
 /* Contenu principal - pour donner de l'espace sous la barre du haut */
 .main-content {
-    margin-top: 60px; /* Ajustez selon la hauteur de la barre du haut */
+    margin-top: 80px; /* Ajustez selon la hauteur de la barre du haut */
     padding: 20px;
     text-align: center;
 }
