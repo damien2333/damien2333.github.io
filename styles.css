@@ -12,7 +12,7 @@ body {
     background-color: black;
     color: white;
     display: flex;
-    align-items: center; /* Aligne les éléments au centre verticalement */
+    align-items: center; /* Aligne les éléments verticalement */
     justify-content: space-between; /* Espace entre logo et menu */
     padding: 10px 20px;
     height: 60px; /* Fixe une hauteur pour éviter l'agrandissement */
