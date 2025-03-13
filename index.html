@@ -1,84 +1,160 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script> <!-- Chargement du script -->
-</head>
-<body>
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
 
-    <!-- Bandeau en haut -->
-    <div class="top-bar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo">
-            </a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#" onclick="loadPage('portfolio.html')">Portfolio</a></li>
-                <li><a href="#" onclick="loadPage('bio.html')">Bio</a></li>
-                <li><a href="#" onclick="loadPage('contact.html')">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+/* Bandeau en haut */
+.top-bar {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center; /* Aligne les éléments verticalement */
+    justify-content: space-between; /* Espace entre logo et menu */
+    padding: 10px 20px;
+    height: 60px; /* Fixe une hauteur pour éviter l'agrandissement */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Met la barre au-dessus du reste */
+}
 
-    <!-- Contenu dynamique qui change sans recharger la page -->
-    <div id="dynamic-content" class="main-content">
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Découvrez mes projets en cliquant sur les vignettes ci-dessous.</p>
-        
-        <!-- 10 Projets sous forme de vignettes carrées -->
-        <div class="projects">
-            <a href="project1.html" class="project">
-                <img src="images/project1.jpg" alt="Projet 1">
-                <h3>Projet 1</h3>
-            </a>
-            <a href="project2.html" class="project">
-                <img src="images/project2.jpg" alt="Projet 2">
-                <h3>Projet 2</h3>
-            </a>
-            <a href="project3.html" class="project">
-                <img src="images/project3.jpg" alt="Projet 3">
-                <h3>Projet 3</h3>
-            </a>
-            <a href="project4.html" class="project">
-                <img src="images/project4.jpg" alt="Projet 4">
-                <h3>Projet 4</h3>
-            </a>
-            <a href="project5.html" class="project">
-                <img src="images/project5.jpg" alt="Projet 5">
-                <h3>Projet 5</h3>
-            </a>
-            <a href="project6.html" class="project">
-                <img src="images/project6.jpg" alt="Projet 6">
-                <h3>Projet 6</h3>
-            </a>
-            <a href="project7.html" class="project">
-                <img src="images/project7.jpg" alt="Projet 7">
-                <h3>Projet 7</h3>
-            </a>
-            <a href="project8.html" class="project">
-                <img src="images/project8.jpg" alt="Projet 8">
-                <h3>Projet 8</h3>
-            </a>
-            <a href="project9.html" class="project">
-                <img src="images/project9.jpg" alt="Projet 9">
-                <h3>Projet 9</h3>
-            </a>
-            <a href="project10.html" class="project">
-                <img src="images/project10.jpg" alt="Projet 10">
-                <h3>Projet 10</h3>
-            </a>
-        </div>
-    </div>
+.top-bar .logo img {
+    height: 40px;
+}
 
-    <!-- Bandeau en bas -->
-    <div class="bottom-bar">
-        <p>© 2025 Mon Portfolio</p>
-    </div>
+.top-bar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
-</body>
-</html>
+.top-bar nav ul li {
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+.top-bar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px; /* Assure une bonne interaction sans étirer la barre */
+}
+
+/* Contenu principal (Portfolio) */
+.main-content {
+    margin-top: 80px; /* Décale le contenu sous la barre */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grille des projets */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Style des projets */
+.project {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.project img {
+    width: 70%;
+    height: auto;
+    max-width: 700px;
+    max-height: 700px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.project h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+/* Bandeau en bas */
+.bottom-bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.bottom-bar p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Pages de projet (nouveau contenu spécifique) */
+
+/* Images en plein écran dans les pages de projet */
+.full-screen-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.full-screen-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Page Contact */
+.contact-info {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptation pour les petites résolutions */
+@media (max-width: 1600px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .project img {
+        max-width: 525px;
+        max-height: 525px;
+    }
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .project img {
+        max-width: 100%;
+        max-height: auto;
+    }
+}
