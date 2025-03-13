@@ -1,94 +1,68 @@
-/* Style Global */
+/* Réinitialisation de certains styles de base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+/* Style du bandeau */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px; /* Ajuste selon la taille de ton logo */
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #444;
+}
+
+/* Section Portfolio */
+#portfolio {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #333;
+}
+
+/* Section Bio */
+#bio {
+    padding: 20px;
     background-color: #fff;
     color: #333;
-    line-height: 1.6;
-    text-align: center;
-    padding: 40px 0;
 }
 
-/* Header */
-header {
-    margin-bottom: 50px;
-}
-header h1 {
-    font-size: 48px;
-    color: #333;
-}
-header p {
-    font-size: 20px;
-    color: #777;
-}
-
-/* À propos */
-#about {
-    margin-bottom: 50px;
-}
-#about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
-}
-#about p {
-    font-size: 18px;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Portfolio */
-#portfolio {
-    margin-bottom: 50px;
-}
-#portfolio h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.portfolio-item {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
-}
-.portfolio-item:hover {
-    transform: translateY(-10px);
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-}
-.portfolio-item h3 {
-    padding: 20px;
-    font-size: 24px;
-    color: #333;
-}
-.portfolio-item p {
-    padding: 0 20px 20px 20px;
-    font-size: 16px;
-    color: #777;
-}
-
-/* Footer */
 footer {
-    font-size: 16px;
-    color: #777;
-    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
-footer p {
-    font-weight: bold;
-}
-
