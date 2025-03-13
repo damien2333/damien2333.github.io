@@ -9,6 +9,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding-bottom: 50px; /* Espace pour le footer */
+    height: 100vh; /* Assure que le body prend toute la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Style du bandeau */
@@ -45,15 +48,11 @@ body {
     background-color: #444; /* Change la couleur de fond au survol */
 }
 
-/* Pour éviter que le contenu ne soit caché sous le bandeau */
-body {
-    padding-top: 80px;  /* Espace pour que le contenu commence sous le bandeau */
-}
-
 /* Section Portfolio */
 #portfolio {
     padding: 40px 20px;
     background-color: #fff;
+    flex-grow: 1; /* Permet à la section portfolio de prendre l'espace restant */
 }
 
 .project {
@@ -71,10 +70,11 @@ body {
     color: #333;
 }
 
-/* Footer */
+/* Footer qui reste collé en bas de la fenêtre */
 footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #222;
     color: #fff;
