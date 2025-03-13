@@ -12,7 +12,7 @@ body {
     background-color: #000;
     color: white;
     display: flex;
-    justify-content: center; /* Centrer le texte */
+    justify-content: space-between; /* Espacement entre le logo et le texte */
     align-items: center;
     padding: 10px 20px;
     position: fixed;
@@ -23,49 +23,40 @@ body {
     height: 40px; /* Hauteur de la barre */
 }
 
+/* Logo */
+.top-bar .logo img {
+    height: 30px; /* Taille du logo plus petite */
+}
+
 /* Texte dans la barre du haut */
 .top-bar .bar-text {
     font-size: 16px; /* Taille du texte */
     font-weight: bold; /* Gras pour le texte */
     text-align: center;
+    color: white;
+    flex-grow: 1;
 }
 
-/* Contenu principal (Portfolio) */
+/* Contenu principal (Portfolio et Bio) */
 .main-content {
     margin-top: 100px;
     padding: 20px;
-    text-align: center;
+    text-align: left; /* Alignement à gauche */
 }
 
-/* Grille des projets */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 projets par ligne */
-    gap: 30px;
+/* Aligner portfolio et bio horizontalement */
+.portfolio-bio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 40px;
     padding: 20px;
-    justify-content: center;
 }
 
-/* Style des projets */
-.project {
-    text-align: center;
-    color: #000;
-    text-decoration: none;
-}
-
-.project img {
-    width: 70%; /* Réduction de la taille des images de 30% */
-    height: auto;
-    max-width: 700px;
-    max-height: 700px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.project h3 {
-    margin-top: 15px;
-    font-size: 24px;
+.portfolio-bio-container .section {
+    width: 45%; /* Chaque section occupe 45% de la largeur */
+    text-align: left;
+    color: white; /* Texte en blanc */
 }
 
 /* Bandeau en bas */
