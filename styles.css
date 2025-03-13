@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Changement de l'arrière-plan en blanc */
 }
 
 /* Bandeau en haut */
@@ -55,7 +55,7 @@ body {
 /* Grille des projets */
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 projets par ligne */
+    grid-template-columns: repeat(3, 1fr); /* 3 projets par ligne */
     gap: 30px;
     margin-top: 40px;
     padding: 20px;
@@ -72,8 +72,8 @@ body {
 .project img {
     width: 100%;
     height: auto;
-    max-width: 750px; /* Taille augmentée */
-    max-height: 750px;
+    max-width: 1000px; /* Augmentation de la taille des images */
+    max-height: 1000px;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -104,14 +104,17 @@ body {
 /* Adaptation pour les petites résolutions */
 @media (max-width: 1600px) {
     .projects {
-        grid-template-columns: repeat(1, 1fr); /* 1 projet par ligne */
+        grid-template-columns: repeat(2, 1fr); /* 2 projets par ligne */
     }
 }
 
 @media (max-width: 900px) {
     .project img {
-        max-width: 500px; /* Réduction pour tablette */
-        max-height: 500px;
+        max-width: 750px; /* Réduction pour tablette */
+        max-height: 750px;
+    }
+    .projects {
+        grid-template-columns: repeat(1, 1fr); /* 1 projet par ligne */
     }
 }
 
