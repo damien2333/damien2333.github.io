@@ -49,28 +49,3 @@ header {
     background: #333;
     color: white;
     padding: 20px;
-}
-
-section {
-    padding: 40px;
-}
-
-.grid {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.item img {
-    width: 200px;
-    border-radius: 10px;
-}
-
-footer {
-    background: #333;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
