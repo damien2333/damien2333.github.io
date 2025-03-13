@@ -43,7 +43,7 @@ body {
     font-size: 16px;
 }
 
-/* Contenu principal */
+/* Contenu principal (Portfolio) */
 .main-content {
     margin-top: 100px;
     padding: 20px;
@@ -100,6 +100,8 @@ body {
 }
 
 /* Pages de projet (nouveau contenu spécifique) */
+
+/* Images en plein écran dans les pages de projet */
 .full-screen-images {
     display: flex;
     flex-direction: column;
@@ -151,6 +153,6 @@ body {
 @media (max-width: 600px) {
     .project img {
         max-width: 100%;
-        max-height: auto;
+        height: auto;
     }
 }
