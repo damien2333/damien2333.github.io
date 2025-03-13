@@ -117,6 +117,22 @@ body {
     margin-bottom: 20px;
 }
 
+/* Page Contact */
+.contact-info {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 /* Adaptation pour les petites résolutions */
 @media (max-width: 1600px) {
     .projects {
