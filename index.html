@@ -1,160 +1,50 @@
-/* Style global */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ffffff;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* Bandeau en haut */
-.top-bar {
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center; /* Aligne les éléments verticalement */
-    justify-content: space-between; /* Espace entre logo et menu */
-    padding: 10px 20px;
-    height: 60px; /* Fixe une hauteur pour éviter l'agrandissement */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Met la barre au-dessus du reste */
-}
+    <!-- Bandeau en haut -->
+    <header class="top-bar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-.top-bar .logo img {
-    height: 40px;
-}
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <h1>Mon Portfolio</h1>
+        <div class="projects">
+            <a href="#" class="project">
+                <img src="projet1.jpg" alt="Projet 1">
+                <h3>Projet 1</h3>
+            </a>
+            <a href="#" class="project">
+                <img src="projet2.jpg" alt="Projet 2">
+                <h3>Projet 2</h3>
+            </a>
+            <a href="#" class="project">
+                <img src="projet3.jpg" alt="Projet 3">
+                <h3>Projet 3</h3>
+            </a>
+        </div>
+    </main>
 
-.top-bar nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+    <!-- Bandeau en bas -->
+    <footer class="bottom-bar">
+        <p>&copy; 2025 - Mon Portfolio</p>
+    </footer>
 
-.top-bar nav ul li {
-    margin-right: 20px; /* Espacement entre les éléments */
-}
-
-.top-bar nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px; /* Assure une bonne interaction sans étirer la barre */
-}
-
-/* Contenu principal (Portfolio) */
-.main-content {
-    margin-top: 80px; /* Décale le contenu sous la barre */
-    padding: 20px;
-    text-align: center;
-}
-
-/* Grille des projets */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 40px;
-    padding: 20px;
-    justify-content: center;
-}
-
-/* Style des projets */
-.project {
-    text-align: center;
-    color: #000;
-    text-decoration: none;
-}
-
-.project img {
-    width: 70%;
-    height: auto;
-    max-width: 700px;
-    max-height: 700px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.project h3 {
-    margin-top: 15px;
-    font-size: 24px;
-}
-
-/* Bandeau en bas */
-.bottom-bar {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.bottom-bar p {
-    margin: 0;
-    font-size: 14px;
-}
-
-/* Pages de projet (nouveau contenu spécifique) */
-
-/* Images en plein écran dans les pages de projet */
-.full-screen-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.full-screen-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-/* Page Contact */
-.contact-info {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.contact-info a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Adaptation pour les petites résolutions */
-@media (max-width: 1600px) {
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .project img {
-        max-width: 525px;
-        max-height: 525px;
-    }
-    .projects {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .project img {
-        max-width: 100%;
-        max-height: auto;
-    }
-}
+</body>
+</html>
