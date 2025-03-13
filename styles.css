@@ -70,10 +70,10 @@ body {
 }
 
 .project img {
-    width: 100%;
+    width: 70%; /* Réduction de la taille des images de 30% */
     height: auto;
-    max-width: 1000px; /* Augmentation de la taille des images */
-    max-height: 1000px;
+    max-width: 700px;
+    max-height: 700px;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -110,8 +110,8 @@ body {
 
 @media (max-width: 900px) {
     .project img {
-        max-width: 750px; /* Réduction pour tablette */
-        max-height: 750px;
+        max-width: 525px; /* Réduction pour tablette */
+        max-height: 525px;
     }
     .projects {
         grid-template-columns: repeat(1, 1fr); /* 1 projet par ligne */
