@@ -47,7 +47,7 @@ body {
 
 /* Contenu principal */
 .main-content {
-    margin-top: 80px;
+    margin-top: 100px;
     padding: 20px;
     text-align: center;
 }
@@ -55,8 +55,8 @@ body {
 /* Grille des projets */
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 projets par ligne */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 projets par ligne */
+    gap: 30px;
     margin-top: 40px;
     padding: 20px;
     justify-content: center;
@@ -72,15 +72,15 @@ body {
 .project img {
     width: 100%;
     height: auto;
-    max-width: 300px; /* Taille plus grande */
-    max-height: 300px;
+    max-width: 750px; /* Taille augmentée */
+    max-height: 750px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .project h3 {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 15px;
+    font-size: 24px;
 }
 
 /* Bandeau en bas */
@@ -102,14 +102,22 @@ body {
 }
 
 /* Adaptation pour les petites résolutions */
-@media (max-width: 900px) {
+@media (max-width: 1600px) {
     .projects {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+        grid-template-columns: repeat(1, 1fr); /* 1 projet par ligne */
+    }
+}
+
+@media (max-width: 900px) {
+    .project img {
+        max-width: 500px; /* Réduction pour tablette */
+        max-height: 500px;
     }
 }
 
 @media (max-width: 600px) {
-    .projects {
-        grid-template-columns: 1fr; /* 1 colonne */
+    .project img {
+        max-width: 100%; /* Ajustement pour mobile */
+        max-height: auto;
     }
 }
