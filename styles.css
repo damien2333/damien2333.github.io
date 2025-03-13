@@ -15,15 +15,15 @@ body {
     background-color: black;
     color: white;
     display: flex;
-    align-items: center; /* Aligne les éléments verticalement */
-    justify-content: space-between; /* Espace entre logo et menu */
+    align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
-    height: 60px; /* Fixe une hauteur pour éviter l'agrandissement */
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Met la barre au-dessus du reste */
+    z-index: 1000;
 }
 
 .top-bar .logo img {
@@ -36,24 +36,24 @@ body {
 }
 
 .top-bar nav ul li {
-    margin-right: 20px; /* Espacement entre les éléments */
+    margin-right: 20px;
 }
 
 .top-bar nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    padding: 10px 15px; /* Assure une bonne interaction sans étirer la barre */
+    padding: 10px 15px;
 }
 
 .top-bar nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Effet hover */
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
-/* Contenu principal (Portfolio) */
+/* Contenu principal */
 .main-content {
-    margin-top: 80px; /* Décale le contenu sous la barre */
+    margin-top: 80px;
     padding: 20px;
     text-align: center;
 }
@@ -65,7 +65,7 @@ body {
     gap: 30px;
     margin-top: 40px;
     padding: 20px;
-    justify-items: center; /* Centre les éléments */
+    justify-items: center;
 }
 
 /* Style des projets */
@@ -86,7 +86,7 @@ body {
 }
 
 .project img:hover {
-    transform: scale(1.05); /* Zoom léger au survol */
+    transform: scale(1.05);
 }
 
 .project h3 {
@@ -112,39 +112,7 @@ body {
     font-size: 14px;
 }
 
-/* Pages de projet (nouveau contenu spécifique) */
-.full-screen-images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.full-screen-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-/* Page Contact */
-.contact-info {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.contact-info a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Adaptation pour les petites résolutions */
+/* Adaptation pour les écrans plus petits */
 @media (max-width: 1600px) {
     .projects {
         grid-template-columns: repeat(2, 1fr);
