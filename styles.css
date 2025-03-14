@@ -8,7 +8,7 @@ body {
 /* Bande noire en haut */
 .header {
     background-color: black;
-    padding: 20px;
+    padding: 30px;  /* Un peu plus d'espace en haut */
     text-align: left;
 }
 
@@ -21,19 +21,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin-top: 30px; /* Plus d'espace entre la bande noire et les vignettes */
 }
 
 /* Alignement des rangées */
 .row {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Plus d'espace entre les lignes */
+    gap: 20px;  /* Ajout d'un espace entre les vignettes */
 }
 
 /* Style des vignettes */
 .vignette {
-    margin: 0 15px;
     width: 600px;  /* Largeur doublée */
     height: 400px; /* Hauteur doublée */
     overflow: hidden; /* Pour cacher l'excédent d'image */
@@ -52,4 +52,17 @@ body {
 .vignette:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive : ajustement pour les petits écrans */
+@media (max-width: 768px) {
+    .vignette {
+        width: 90%;  /* Réduit la largeur des vignettes */
+        height: auto; /* Hauteur automatique pour garder le ratio */
+    }
+
+    .row {
+        flex-direction: column;  /* Passe les vignettes en colonne */
+        gap: 20px;  /* Un peu d'espace entre les vignettes verticalement */
+    }
 }
