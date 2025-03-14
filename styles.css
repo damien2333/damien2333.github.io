@@ -1,84 +1,80 @@
-/* Style global */
-body {
+/* Style général */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
 
 /* Bande noire en haut */
 .header {
-    background-color: black;
-    padding: 10px 30px;  /* Réduit la largeur de la bande noire */
+    background-color: #000;
+    padding: 10px 0; /* Réduit la hauteur du bandeau */
     text-align: left;
 }
 
 .logo {
-    height: 50px;
+    width: 150px; /* Ajustez la taille du logo à votre convenance */
+    margin-left: 20px;
 }
 
-/* Conteneur des vignettes */
+/* Section des vignettes */
 .gallery {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px; /* Un peu moins d'espace entre la bande noire et les vignettes */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px; /* Espace entre le bandeau noir et les vignettes */
 }
 
-/* Alignement des rangées */
 .row {
     display: flex;
-    justify-content: center;
-    margin-bottom: 30px; /* Plus d'espace entre les lignes */
-    gap: 20px;  /* Espacement entre les vignettes */
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px; /* Espacement entre les rangées */
 }
 
-/* Style des vignettes */
 .vignette {
-    width: 600px;  /* Largeur doublée */
-    height: 400px; /* Hauteur doublée */
-    overflow: hidden; /* Pour cacher l'excédent d'image */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
+    width: 30%;
+    margin-bottom: 20px; /* Espacement entre les vignettes */
 }
 
 .vignette img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cela permet de garder un ratio rectangulaire sans déformation */
-}
-
-/* Supprimer l'effet hover */
-.vignette:hover {
-    transform: none;
+    height: auto;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: #000;
+    color: #fff;
     text-align: center;
-    font-size: 14px;
+    padding: 15px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 footer a {
-    color: #ddd;
+    color: #fff;
     text-decoration: none;
 }
 
-/* Responsive : ajustement pour les petits écrans */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .vignette {
-        width: 90%;  /* Réduit la largeur des vignettes */
-        height: auto; /* Hauteur automatique pour garder le ratio */
+    .row {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .row {
-        flex-direction: column;  /* Passe les vignettes en colonne */
-        gap: 20px;  /* Un peu d'espace entre les vignettes verticalement */
+    .vignette {
+        width: 80%;
+        margin-bottom: 20px;
     }
 }
