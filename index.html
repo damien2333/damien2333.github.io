@@ -1,225 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Projet 1</title>
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Une description de votre projet." />
-    <meta name="author" content="LastName FirstName" />
-    <link rel="canonical" href="https://jeromelachaud.com/freelancer-theme/" />
-    <link rel="stylesheet" href="https://jeromelachaud.com/freelancer-theme/style.css">
-    <link rel="stylesheet" href="https://jeromelachaud.com/freelancer-theme/css/font-awesome/css/font-awesome.min.css">
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
-    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" />
-    <style>
-      body {
-        background-color: #fff;
-        color: #000;
-      }
-
-      nav {
-        background-color: #333;
-      }
-
-      nav a {
-        color: #fff;
-      }
-
-      .navbar-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-      }
-
-      .navbar-header a {
-        font-size: 24px;
-        font-weight: bold;
-      }
-
-      header {
-        background-color: #000;
-        padding: 40px 0;
-        text-align: center;
-      }
-
-      header img {
-        width: 150px;
-        border-radius: 50%;
-      }
-
-      .intro-text {
-        color: #fff;
-        margin-top: 20px;
-      }
-
-      .star-light {
-        border-top: 2px solid #fff;
-        width: 50px;
-        margin: 10px auto;
-      }
-
-      .portfolio-item img {
-        border: 2px solid #000;
-      }
-
-      .footer-above, .footer-below {
-        background-color: #000;
-        color: #fff;
-      }
-
-      .btn-outline {
-        color: #fff;
-        border: 1px solid #fff;
-      }
-
-      .scroll-top a {
-        color: #fff;
-        background-color: #333;
-      }
-    </style>
-  </head>
-
-  <body id="page-top" class="index">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header page-scroll">
-          <a class="navbar-brand" href="#page-top">
-            <!-- Remplacer ici par votre logo -->
-            <img src="logo.png" alt="Logo" style="width: 150px; height: auto;" />
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
-            <li class="page-scroll"><a href="#about">À propos</a></li>
-            <li class="page-scroll"><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- En-tête -->
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <img class="img-responsive" src="img/profile.png" alt="profile-pic" />
-            <div class="intro-text">
-              <span class="name">Freelance</span>
-              <hr class="star-light" />
-              <span class="skills">Développeur Web - Graphiste - Concepteur d'expérience utilisateur</span>
-            </div>
-          </div>
-        </div>
-      </div>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignettes de Projet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Bande noire avec logo -->
+    <header class="header">
+        <img src="logo.png" alt="Logo" class="logo">
     </header>
 
-    <!-- Section Grille du portefeuille -->
-    <section id="portfolio">
-      <div class="container">
+    <!-- Conteneur des vignettes -->
+    <section class="gallery">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Portfolio</h2>
-            <hr class="star-primary" />
-          </div>
+            <div class="vignette"><img src="project1.jpg" alt="Project 1"></div>
+            <div class="vignette"><img src="project2.jpg" alt="Project 2"></div>
+            <div class="vignette"><img src="project3.jpg" alt="Project 3"></div>
         </div>
         <div class="row">
-          <!-- Portfolio items -->
-          <div class="col-sm-4 portfolio-item">
-            <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img src="img/portfolio/cabin.png" class="img-responsive" alt="image-alt" />
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a href="#portfolioModal-2" class="portfolio-link" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img src="img/portfolio/cake.png" class="img-responsive" alt="image-alt" />
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a href="#portfolioModal-3" class="portfolio-link" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img src="img/portfolio/circus.png" class="img-responsive" alt="image-alt" />
-            </a>
-          </div>
+            <div class="vignette"><img src="project4.jpg" alt="Project 4"></div>
+            <div class="vignette"><img src="project5.jpg" alt="Project 5"></div>
+            <div class="vignette"><img src="project6.jpg" alt="Project 6"></div>
         </div>
-      </div>
+        <div class="row">
+            <div class="vignette"><img src="project7.jpg" alt="Project 7"></div>
+            <div class="vignette"><img src="project8.jpg" alt="Project 8"></div>
+            <div class="vignette"><img src="project9.jpg" alt="Project 9"></div>
+        </div>
+        <div class="row">
+            <div class="vignette"><img src="project10.jpg" alt="Project 10"></div>
+        </div>
     </section>
-
-    <!-- Section À propos -->
-    <section class="success" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>À propos</h2>
-            <hr class="star-light" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-lg-offset-2">
-            <p>Freelancer est un thème Bootstrap gratuit créé par Start Bootstrap. Il comprend tous les fichiers sources complets et des feuilles de style LESS pour une personnalisation facile.</p>
-          </div>
-          <div class="col-lg-4">
-            <p>Que vous soyez un étudiant, un professionnel ou un graphiste, ce modèle est le point de départ idéal pour présenter votre travail !</p>
-          </div>
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-            <a href="https://github.com/jeromelachaud/freelancer-theme" class="btn btn-lg btn-outline">
-              <i class="fa fa-download"></i> Télécharger le thème
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Contactez-moi</h2>
-            <hr class="star-primary" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <form action="//formspree.io/votre-email@domaine.com" method="POST" name="sentMessage" id="contactForm" novalidate>
-              <div class="row control-group">
-                <div class="form-group col-xs-12 floating-label-form-group controls">
-                  <label for="name">Nom</label>
-                  <input type="text" name="name" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Veuillez saisir votre nom." />
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="row control-group">
-                <div class="form-group col-xs-12 floating-label-form-group controls">
-                  <label for="email">Adresse e-mail</label>
-                  <input type="email" name="_replyto" class="form-control" placeholder="Adresse e-mail" id="email" required data-validation-required-message="Veuillez saisir votre adresse e-mail." />
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div>
-                <input type="hidden" name="_subject" value="Nouvelle soumission !" />
-                <input type="text" name="_gotcha" style="display:none" />
-              </div>
-              <div class="row control-group">
-                <div class="form-group col-xs-12 floating-label-form-group controls">
-                  <label for="message">Message</label>
-                  <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Veuillez saisir un message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
+</body>
+</html>
