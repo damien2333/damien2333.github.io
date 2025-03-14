@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Bande noire en haut */
+/* Bande noire en haut avec logo cliquable */
 .header {
     background-color: #000;
     padding: 10px 0;
@@ -19,54 +19,30 @@ body {
 .logo {
     width: 150px;
     margin-left: 20px;
-}
-
-/* Section des vignettes */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.vignette {
-    width: 30%;
-    margin-bottom: 20px;
-}
-
-.vignette img {
-    width: 100%;
-    height: auto;
-    cursor: pointer; /* Ajoute un effet "main" lors du survol */
+    cursor: pointer;
 }
 
 /* Détail du projet */
 .project-detail {
-    margin: 20px;
+    margin: 40px 20px; /* Espace général autour du contenu */
     text-align: center;
 }
 
 .project-detail h1 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Descend le titre pour plus d'air */
 }
 
-.project-detail p {
+.description {
     font-size: 1rem;
-    margin-bottom: 30px;
+    line-height: 1.8;
+    margin-bottom: 50px; /* Plus d'espace avant la première image */
     width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Galerie des images */
 .project-gallery {
     display: flex;
     justify-content: space-around;
@@ -103,23 +79,17 @@ footer a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
+    .project-detail {
+        margin: 20px;
     }
 
-    .vignette {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .gallery {
-        margin-left: 10px;
-        margin-right: 10px;
+    .description {
+        width: 90%;
     }
 
     .project-gallery {
         flex-direction: column;
+        align-items: center;
     }
 
     .project-image {
