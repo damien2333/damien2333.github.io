@@ -1,4 +1,4 @@
-/* Style général */
+/* Réinitialisation de base */
 * {
     margin: 0;
     padding: 0;
@@ -7,93 +7,124 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Bande noire en haut avec logo cliquable */
+/* Bande noire en haut */
 .header {
     background-color: #000;
-    padding: 10px 0;
-    text-align: left;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    width: 150px;
-    margin-left: 20px;
+    height: 40px;
+}
+
+/* Galerie des vignettes */
+.gallery {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vignette {
+    flex: 1;
+    max-width: 30%;
     cursor: pointer;
 }
 
-/* Détail du projet */
-.project-detail {
-    margin: 40px 20px; /* Espace général autour du contenu */
-    text-align: center;
-}
-
-.project-detail h1 {
-    font-size: 2rem;
-    margin-bottom: 20px; /* Descend le titre pour plus d'air */
-}
-
-.description {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 50px; /* Plus d'espace avant la première image */
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Galerie des images */
-.project-gallery {
-    display: flex;
-    justify-content: space-around;
-}
-
-.project-image {
-    width: 30%;
-}
-
-.project-image img {
+.vignette img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.vignette img:hover {
+    transform: scale(1.05);
+}
+
+/* Page projet */
+.project-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.project-images img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: #000;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
 }
 
-footer a {
-    color: #fff;
+.footer a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-footer a:hover {
+.footer a:hover {
     text-decoration: underline;
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .vignette {
+        max-width: 45%;
+    }
+}
+
 @media (max-width: 768px) {
-    .project-detail {
-        margin: 20px;
-    }
-
-    .description {
-        width: 90%;
-    }
-
-    .project-gallery {
+    .row {
         flex-direction: column;
-        align-items: center;
     }
-
-    .project-image {
-        width: 80%;
-        margin-bottom: 20px;
+    .vignette {
+        max-width: 100%;
     }
 }
