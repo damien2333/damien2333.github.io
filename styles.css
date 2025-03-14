@@ -8,7 +8,7 @@ body {
 /* Bande noire en haut */
 .header {
     background-color: black;
-    padding: 30px;  /* Un peu plus d'espace en haut */
+    padding: 10px 30px;  /* Réduit la largeur de la bande noire */
     text-align: left;
 }
 
@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px; /* Plus d'espace entre la bande noire et les vignettes */
+    margin-top: 20px; /* Un peu moins d'espace entre la bande noire et les vignettes */
 }
 
 /* Alignement des rangées */
@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 30px; /* Plus d'espace entre les lignes */
-    gap: 20px;  /* Ajout d'un espace entre les vignettes */
+    gap: 20px;  /* Espacement entre les vignettes */
 }
 
 /* Style des vignettes */
@@ -48,10 +48,26 @@ body {
     object-fit: cover; /* Cela permet de garder un ratio rectangulaire sans déformation */
 }
 
-/* Optionnel : hover effect */
+/* Supprimer l'effet hover */
 .vignette:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+    transform: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
 }
 
 /* Responsive : ajustement pour les petits écrans */
