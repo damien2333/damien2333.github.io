@@ -27,6 +27,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 40px; /* Espace entre le bandeau noir et les vignettes */
+    margin-left: 20px;  /* Marge gauche uniforme */
+    margin-right: 20px; /* Marge droite uniforme */
 }
 
 .row {
@@ -38,7 +40,7 @@ body {
 
 .vignette {
     width: 30%;
-    margin-bottom: 20px; /* Espacement entre les vignettes */
+    margin-bottom: 20px; /* Espacement uniforme entre les vignettes */
 }
 
 .vignette img {
@@ -76,5 +78,10 @@ footer a:hover {
     .vignette {
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .gallery {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
